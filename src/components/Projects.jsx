@@ -39,19 +39,63 @@ export default function Projects() {
         {/* Accordion for Projects */}
         <div className="w-full mt-4">
         {[
-            { title: 'Gym Application', description: 'A fitness tracking app.' },
-            { title: 'Context Aware Music Application', description: 'An app for music recommendations based on context.' },
-            { title: 'Python City Map Plot', description: 'A map visualization tool using Python.' },
-            { title: 'MyFlix', description: 'A movie streaming platform clone.' },
-            { title: 'NASA API Pull', description: 'Fetches and displays NASA data.' },
-            { title: 'ToDo List', description: 'A task management app.' },
-            { title: 'Sudoku Solver', description: 'A C based Sudoku solver.' },
+            { 
+                title: 'Gym Application',
+                description: ['A workout creation application based on goal built on React.'],
+                link: 'https://ritwicksgymapp.netlify.app/'
+            },
+            { 
+                title: 'Context Aware Music Application',
+                description: ['An app for music recommendations based on context and users listening pattern built on top of Spotify Engine.'],
+                link: 'https://github.com/KumarRitwick/ContextAwareMusicApp'
+            },
+            { 
+                title: 'Python City Map Plot', 
+                description: ['A map visualization tool using Python to plot the city with maximum population.'],
+                link: 'https://github.com/KumarRitwick/PythonCityMapPlot'
+            },
+            { 
+                title: 'MyFlix', 
+                description: ['A movie streaming platform clone built using Nginx, Python Flask, Mongo Catalogue.',
+                            'Note: This project has multiple mobing parts so I have linked my GitHub, each of these code needs to run in a container individually and linked together to run the application.'],
+                link: 'https://github.com/KumarRitwick?tab=repositories'
+            },
+            { 
+                title: 'NASA API Pull', 
+                description: ['Fetches and displays NASA picture of the day with description as a slider window built using React.'],
+                link: 'https://nasaapireactproject.netlify.app/'
+            },
+            { 
+                title: 'ToDo List', 
+                description: ['A task management app built using React which can hold history in local storage.'],
+                link: 'https://todolistritwick.netlify.app/'
+            },
+            { 
+                title: 'Sudoku Solver', 
+                description: ['A C based Sudoku solver built with purpose of understanding loops.'],
+                link: 'https://github.com/KumarRitwick/Sudoku-Solver'
+            },
         ].map((project, index) => (
             <details key={index} className="border rounded-md p-3 mb-2 accordion-bg text-left">
                 <summary className="font-medium cursor-pointer">
                     {project.title}
                 </summary>
-                <p className="mt-2 text-sm text-white-700">{project.description}</p>
+                <hr className="my-2 border-gray-300" />
+                <p className="mt-2 text-sm text-white-700" >
+                    {project.description.map((line, idx) => (
+                    <span key={idx}>
+                        {line}
+                        <br />
+                        <br />
+                    </span>
+                    ))}
+                </p>
+                <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline text-sm mt-2 block">View Project
+                </a>
             </details>
         ))}
         </div>
