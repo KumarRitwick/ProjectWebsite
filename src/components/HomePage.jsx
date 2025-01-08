@@ -1,7 +1,9 @@
 import React from 'react'
 import Button from './Button'
+import { useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
+    const navigate = useNavigate();
   return (
         <div className='min-h-screen flex flex-col gap-10 items-center justify-center text-center max-w-[800px] w-full mx-auto p-4'>
             <div className='flex flex-col gap-4'>
@@ -12,7 +14,7 @@ export default function HomePage() {
             <p className='text-sm md:text-base font-light'>I hereby acknowledgement that these projects have come out of pure <span className='text-purple-400 font-medium'>love for coding, learning new technology & sheer boredom.</span> The projects in here are something that I did while learning <span className='text-purple-400 font-medium'>a specific technology.</span> Please feel free to browse and have a look, if you have any suggestion, do drop me an email.</p>
             <div className='flex flex-row gap-4'>
                 <Button func={() => {
-                    window.location.href = '#projects'
+                    navigate('/projects')
                 }} text={"Projects"} className='custom-text'></Button>
                 <Button func={() => {
                     const link = document.createElement('a');
