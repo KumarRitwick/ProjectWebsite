@@ -12,11 +12,15 @@ export default function HomePage() {
             <p className='text-sm md:text-base font-light'>I hereby acknowledgement that these projects have come out of pure <span className='text-purple-400 font-medium'>love for coding and learning new technology.</span> The projects in here are something that I did while learning <span className='text-purple-400 font-medium'>a specific technology.</span> Please feel free to browse and have a look, if you have any sugeestions, do drop me an email.</p>
             <div className='flex flex-col gap-4'>
                 <Button func={() => {
-                    window.location.href = '#generate'
+                    window.location.href = '#projects'
                 }} text={"Projects"} className='custom-text'></Button>
                 <Button func={() => {
-                    window.location.href = '#generate'
-                }} text={"Resume"}></Button>
+                    const link = document.createElement('a');
+                    link.href = '/public/Resume_RitwickKumar.pdf'
+                    link.download = 'Resume_RitwickKumar.pdf';
+                    link.click();
+                }} text={"Resume"}>
+                </Button>
             </div>
         </div>
   )
