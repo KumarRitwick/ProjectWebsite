@@ -31,3 +31,33 @@ span {
 .custom-text {
   color: #d894d8;
 }
+
+.custom-text-button {
+  background-color: #8A2BE2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-text-button:hover {
+  background-color: #7A1FA2;
+}
+
+li{
+  padding-bottom: 5px;
+}
+
+.accordion-bg {
+  background-color: #8A2BE2;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-bg:hover {
+  background-color: #7A1FA2;
+}
