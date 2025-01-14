@@ -75,6 +75,11 @@ export default function Projects() {
                 description: ['A C based Sudoku solver built with purpose of understanding loops.'],
                 link: 'https://github.com/KumarRitwick/Sudoku-Solver'
             },
+            { 
+                title: 'Free Transcribe', 
+                description: ['A React based transcription tool to convert any audio(pre recorded or active recording).'],
+                link: 'https://free-transcribe.netlify.app/'
+            },
         ].map((project, index) => (
             <details key={index} className="border rounded-md p-3 mb-2 accordion-bg text-left">
                 <summary className="font-medium cursor-pointer">
