@@ -58,7 +58,7 @@ export default function HomePage() {
             }} text={"Projects"} className='custom-text'></Button>
             <Button func={() => {
                 const link = document.createElement('a');
-                link.href = '/assets/Resume/Resume_RitwickKumar.pdf'
+                link.href = '/Resume_RitwickKumar.pdf';
                 link.download = 'Resume_RitwickKumar.pdf';
                 link.click();
             }} text={"Resume"}>
