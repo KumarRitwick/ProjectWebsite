@@ -50,7 +50,7 @@ export default function HomePage() {
   return (
         <div className='min-h-screen flex flex-col gap-10 items-center justify-center text-center max-w-[800px] w-full mx-auto p-4'>
             <div className='flex flex-col gap-4'>
-                <p>Hi, before we start let me introduce myself, I am</p>
+                <p>Hi, before we start, let me introduce myself, I am</p>
                 <h1 className='uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>Ritwick <span className='text-purple-400'>Kumar</span></h1>
                 <h1 className='uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-4xl'>{`And I am a`} <span className="txt-rotate text-purple-400" dataPeriod="1000" data-rotate='[ "Web Devloper", "Full Stack Engineer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
             </div>
