@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Button from './Button'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -45,6 +46,19 @@ export default function HomePage() {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
+  const ButtonMailto = ({ mailto, label }) => {
+    return (
+        <Link
+            to='#'
+            onClick={(e) => {
+                window.location.href = mailto;
+                e.preventDefault();
+            }}
+        >
+            {label}
+        </Link>
+    );
+  };
   return (
     <div className='min-h-screen flex flex-col gap-10 items-center justify-center text-center max-w-[800px] w-full mx-auto'>
         <div className='flex flex-col gap-4'>
@@ -65,6 +79,19 @@ export default function HomePage() {
             </Button>
         </div>
         <p className='text-sm md:text-base font-light'>I hereby acknowledgement that these projects have come out of pure <span className='text-purple-400 font-medium'>love for coding, learning new technology & sheer boredom.</span> The projects in here are something that I did while learning <span className='text-purple-400 font-medium'>a specific technology.</span> Please feel free to browse and have a look, if you have any suggestion, do drop me an email.</p>
+        <footer>
+            <div className="social-icon flex flex-row gap-4">
+                <a href="https://www.linkedin.com/in/ritwick-kumar/">
+                    <i className="fa-brands fa-linkedin icon-size"></i>
+                </a>
+                <a href="https://github.com/KumarRitwick">
+                    <i className="fa-brands fa-square-github icon-size"></i>
+                </a>
+                <a href='mailto:kumarritwick13@gmail.com'>
+                  <i class="fa-solid fa-envelope icon-size"></i>
+                </a>
+            </div>
+        </footer>
     </div>
   )
 }
