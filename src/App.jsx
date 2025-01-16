@@ -4,6 +4,7 @@ import Projects from './components/Projects'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/footer';
 
+
 function App() {
   const [count, setCount] = useState(0)
 

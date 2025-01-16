@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Footer() {
+export default function footer() {
   return (
     <footer className=' flex-col items-center justify-center text-center max-w-[800px] w-full mx-auto'>
         <span className="navbar-text">
