@@ -61,3 +61,7 @@ li{
 .accordion-bg:hover {
   background-color: #7A1FA2;
 }
+
+.icon-size{
+  font-size: xxx-large;
+}
