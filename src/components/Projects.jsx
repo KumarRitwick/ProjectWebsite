@@ -77,7 +77,7 @@ export default function Projects() {
             },
             { 
                 title: 'Free Transcribe', 
-                description: ['A React based transcription tool to convert any audio(pre recorded or active recording).'],
+                description: ['A React based transcription tool to convert any audio(pre recorded or active recording) into any language from the dropdown box.'],
                 link: 'https://free-transcribe.netlify.app/'
             },
         ].map((project, index) => (
