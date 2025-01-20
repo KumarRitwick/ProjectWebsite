@@ -41,13 +41,19 @@ export default function Projects() {
         {[
             { 
                 title: 'Gym Application',
-                description: ['A workout creation application based on goal built on React.'],
+                description: ['A workout creation application based on goal. Built using React.'],
                 link: 'https://ritwicksgymapp.netlify.app/'
             },
             { 
                 title: 'Context Aware Music Application',
-                description: ['An app for music recommendations based on context and users listening pattern built on top of Spotify Engine.'],
+                description: ['An app for music recommendations based on context and users listening pattern built on top of Spotify Engine.',
+                            'Built in completion of MSc Project.'],
                 link: 'https://github.com/KumarRitwick/ContextAwareMusicApp'
+            },
+            { 
+                title: 'Free Transcribe', 
+                description: ['A React based transcription tool to convert any audio(pre recorded or active recording) into any language from the dropdown box.'],
+                link: 'https://free-transcribe.netlify.app/'
             },
             { 
                 title: 'Python City Map Plot', 
@@ -76,9 +82,9 @@ export default function Projects() {
                 link: 'https://github.com/KumarRitwick/Sudoku-Solver'
             },
             { 
-                title: 'Free Transcribe', 
-                description: ['A React based transcription tool to convert any audio(pre recorded or active recording) into any language from the dropdown box.'],
-                link: 'https://free-transcribe.netlify.app/'
+                title: 'Towns mapping', 
+                description: ['A map visualization tool for drawing circles around towns across UK in ratio of population.'],
+                link: 'https://github.com/KumarRitwick/PythonCityMapPlot'
             },
         ].map((project, index) => (
             <details key={index} className="border rounded-md p-3 mb-2 accordion-bg text-left">
