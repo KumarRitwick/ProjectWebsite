@@ -41,7 +41,7 @@ export default function Projects() {
         {[
             { 
                 title: 'Gym Application',
-                description: ['A workout creation application based on goal. Built using React.'],
+                description: ['A workout creation application based on goal explaining the workout along with set counter. Built using React.'],
                 link: 'https://ritwicksgymapp.netlify.app/'
             },
             { 
