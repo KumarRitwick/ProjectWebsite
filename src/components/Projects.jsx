@@ -68,12 +68,12 @@ export default function Projects() {
             },
             { 
                 title: 'NASA API Pull', 
-                description: ['Fetches and displays NASA picture of the day with description as a slider window built using React.'],
+                description: ['Fetches and displays NASA picture of the day with description as a slider window. Built using React.'],
                 link: 'https://nasaapireactproject.netlify.app/'
             },
             { 
                 title: 'ToDo List', 
-                description: ['A task management app built using React which can hold history in local storage.'],
+                description: ['A task management application which can hold history in local storage so data is consistent in a browser. Build using React'],
                 link: 'https://todolistritwick.netlify.app/'
             },
             { 
