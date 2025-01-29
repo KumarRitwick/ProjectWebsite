@@ -26,7 +26,7 @@ export default function Projects() {
     
         {/* Title */}
         <div className="flex flex-col gap-2 mt-16">
-            <h6 className="uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+            <h6 className="uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl padding-top-class">
                 Project <span className="text-purple-400">List</span>
             </h6>
         </div>
