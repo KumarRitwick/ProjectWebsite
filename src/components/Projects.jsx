@@ -33,7 +33,7 @@ export default function Projects() {
     
         {/* Description */}
         <p className="text-sm md:text-base font-light">
-        Here is a short list of <span className="text-purple-400">projects</span> that I have done over some time:
+        Here is an accordion list of <span className="text-purple-400">projects</span> that I have done over some time:
         </p>
     
         {/* Accordion for Projects */}
